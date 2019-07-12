@@ -1,6 +1,6 @@
 {
   "name": "@things-scene/news-ticker",
-  "version": "0.4.8",
+  "version": "1.0.0-beta",
   "description": "News ticker Component for Things Scene.",
   "things-scene": true,
   "main": "src/index.js",
@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ThingsElements/things-scene-news-ticker.git"
+    "url": "git+https://github.com/things-scene/things-scene-news-ticker.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ThingsElements/things-scene-news-ticker/issues"
+    "url": "https://github.com/things-scene/things-scene-news-ticker/issues"
   },
-  "homepage": "https://github.com/ThingsElements/things-scene-news-ticker#readme",
+  "homepage": "https://github.com/things-scene/things-scene-news-ticker#readme",
   "devDependencies": {
     "@hatiolab/things-shell": "*",
     "rollup-plugin-alias": "^1.5.1",
