@@ -1,6 +1,6 @@
 import locales from './locales'
 
-import icon from './assets/news-ticker.png'
+import icon from './assets/icon-news-ticker.png'
 
 var templates = [
   {
