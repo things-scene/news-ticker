@@ -15,6 +15,7 @@ var templates = [
       top: 10,
       width: 300,
       height: 50,
+      duration: 5,
       text: '#{data}'
     }
   }

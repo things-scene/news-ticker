@@ -29,28 +29,28 @@ const NATURE = {
       label: 'reverse',
       name: 'reverse'
     },
-    {
-      type: 'select',
-      label: 'animation-start-position',
-      name: 'animationStartPosition',
-      property: {
-        options: [
-          {
-            display: 'start',
-            value: 'start'
-          },
-          {
-            display: 'end',
-            value: 'end'
-          }
-        ]
-      }
-    },
+    // {
+    //   type: 'select',
+    //   label: 'animation-start-position',
+    //   name: 'animationStartPosition',
+    //   property: {
+    //     options: [
+    //       {
+    //         display: 'start',
+    //         value: 'start'
+    //       },
+    //       {
+    //         display: 'end',
+    //         value: 'end'
+    //       }
+    //     ]
+    //   }
+    // },
     {
       type: 'number',
       label: 'duration',
       name: 'duration',
-      property: { placeholder: 'seconds' }
+      placeholder: 'seconds'
     }
   ]
 }
@@ -131,13 +131,12 @@ export default class NewsTicker extends HTMLOverlayElement {
     } = this.state
 
     var text = this.textSubstitutor().trim()
-    var textLines = text.split('\n')
 
     var isReverse = reverse
     var isTextOverflowed = this.isTextOverflowed
 
     this.element.direction = direction
-    this.element.duration = `${duration}s`
+    this.element.duration = duration * 1000
     this.element.fontColor = fontColor
     this.element.fontFamily = font
     this.element.fontSize = `${fontSize}px`
@@ -145,7 +144,7 @@ export default class NewsTicker extends HTMLOverlayElement {
     this.element.isReverse = isReverse
     this.element.isTextOverflowed = isTextOverflowed
     this.element.animationStartPosition = animationStartPosition
-    this.element.textLines = textLines
+    this.element.textData = text
   }
 
   dispose() {
