@@ -1,6 +1,6 @@
 {
   "name": "@things-scene/news-ticker",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0",
   "description": "News ticker Component for Things Scene.",
   "things-scene": true,
   "main": "src/index.js",
